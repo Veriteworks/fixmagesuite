@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Attribute\Backend\Customlayoutupdate">
+        <plugin name="adjust_layout_data" type="Veriteworks\FixMageSuite\Plugin\CategoryLayoutUpdate"/>
+    </type>
+</config>
