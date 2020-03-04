@@ -20,7 +20,12 @@ class CategoryLayoutUpdate
         $object
     ) {
         $newLayout = $object->getData('custom_layout_update');
-        $object->setOrigData('custom_layout_update', $newLayout);
+        if ($newLayout) {
+            $object->setOrigData('custom_layout_update', $newLayout);
+        } else {
+            $origData = $object->getOrigData('custom_layout_update');
+            $object->setData('custom_layout_update', $origData);
+        }
         return [$object];
     }
 }
