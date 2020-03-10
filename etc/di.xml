@@ -3,4 +3,10 @@
     <type name="Magento\Catalog\Model\Attribute\Backend\Customlayoutupdate">
         <plugin name="adjust_layout_data" type="Veriteworks\FixMageSuite\Plugin\CategoryLayoutUpdate"/>
     </type>
+    <type name="MageSuite\Navigation\Service\Navigation\Builder">
+        <plugin name="sort_items_alphabetically"
+                type="MageSuite\Navigation\Plugin\Service\Navigation\Builder\SortItemsAlphabetically"
+                sortOrder="10" disabled="true"
+        />
+    </type>
 </config>
